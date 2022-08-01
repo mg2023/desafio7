@@ -1,41 +1,87 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-main{
-    display: flex;
-
-/*     Min height 100vh means the element should occupy the web browser viewport height. 
+main {
+  /* main as flex container */
+  display: flex;
+  /*     Min height 100vh means the element should occupy the web browser viewport height. 
     This is always 100 percent of the web browser's viewport height. */
-    min-height: 100vh;
+  min-height: 100vh;
+}
 
+/* flex item of main */
+aside {
+  /* aside as flex container */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* Platinium color */
+  background-color: white;
+  flex: 0 0 20%;
+}
+
+.amigos {
+    justify-content: space-between;
+    /* background-color: aqua; */
+    border: solid 1px gray;
+    /* margin: 1px; */
+    padding: 5px;
+    
 
 }
 
-aside{
-    display: flex;
-    /* Platinium color */
-    background-color: white;
-    flex:0 0 20%;
+.amigos img {
+
+  max-width: 25%;
+  border-radius: 50%;
 }
 
+/* flex item of aside */
+.estado_del_usuario {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  border: solid 1px black;
+  margin: 1px;
+}
+
+.foto_maria img {
+  max-width: 15%;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* flex item of main */
 #contenedor_chat {
-    display: flex;
-    flex-direction: column;
-    background-color: #E5E4E2;
-    flex: 0 0 80%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e4e2;
+  flex: 0 0 80%;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
 }
 
 #contenedor_chat > section:nth-child(1) > img {
-    width: 300px;
+  width: 300px;
 }
 
 #contenedor_chat > section:nth-child(2) {
-    text-align: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-#contenedor_chat > section:nth-child(2) > h1  {
-    font-size:45px;
+#contenedor_chat > section:nth-child(2) > h1 {
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+
+#contenedor_chat > section:nth-child(2) > p {
+  line-height: 1.6;
+}
+
+.negrita {
+  font-weight: bold;
 }

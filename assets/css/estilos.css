@@ -1,0 +1,41 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    display: flex;
+
+/*     Min height 100vh means the element should occupy the web browser viewport height. 
+    This is always 100 percent of the web browser's viewport height. */
+    min-height: 100vh;
+
+
+}
+
+aside{
+    display: flex;
+    /* Platinium color */
+    background-color: white;
+    flex:0 0 20%;
+}
+
+#contenedor_chat {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E4E2;
+    flex: 0 0 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedor_chat > section:nth-child(1) > img {
+    width: 300px;
+}
+
+#contenedor_chat > section:nth-child(2) {
+    text-align: center;
+}
+
+#contenedor_chat > section:nth-child(2) > h1  {
+    font-size:45px;
+}

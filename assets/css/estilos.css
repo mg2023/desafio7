@@ -27,20 +27,51 @@ aside {
     border: solid 1px gray;
     /* margin: 1px; */
     padding: 5px;
+    display: flex;
+ 
+  }
+
+  .amigos > section:nth-child(1) {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     
+  }
+
+  .amigos > section:nth-child(1) > img {
+    padding: 15px;
+    
+    
+  }
+
+#info_maria {
+ /*  max-width: 50%; */
+  display: flex;
 
 }
 
-.foto_maria {
+#info_maria > section:nth-child(1) img {
+  max-width: 25%;
+  border-radius: 50%;
+  padding: 15px;
+  align-self: center;
+}
+
+#info_maria > section:nth-child(1) {
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
-.foto_maria h2{
+#info_maria > section:nth-child(2) h2 {
   font-size: 14px;
 }
 
-.foto_maria p{
+#info_maria > section:nth-child(2) p {
   font-size: 10px;
+  
 }
 
 
@@ -55,20 +86,35 @@ aside {
   display: flex;
   justify-content:space-between;
  
-  border: solid 1px gray
-  margin: 1px;
+  border: solid 1px gray;
+/*   margin: 1px; */
 }
 
-.foto_maria img {
-  max-width: 15%;
-  padding: 10px;
-  border-radius: 50%;
-}
 
 .iconos_maria {
+  padding: 30px;
   max-width: 50%;
-
 }
+
+
+.nuevo_chat {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nuevo_chat section {
+  padding: 15px 60px;
+  background-color: #A491D2;
+  font-size: 20px;
+}
+
+.nuevo_chat section a{
+color: white;
+text-decoration: none;
+}
+
 
 /* flex item of main */
 #contenedor_chat {
@@ -78,7 +124,6 @@ aside {
   flex: 0 0 80%;
   align-items: center;
   justify-content: center;
-  /* justify-content: space-between; */
 }
 
 #contenedor_chat > section:nth-child(1) > img {

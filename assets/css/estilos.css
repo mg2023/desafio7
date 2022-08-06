@@ -14,33 +14,33 @@ main {
 aside {
   /* aside as flex container */
   display: flex;
-  align-items: center;
+ /*  align-items: center; */
+  align-items: stretch;
   flex-direction: column;
   /* Platinium color */
   background-color: white;
   flex: 0 0 20%;
 }
 
+
+/* Inicio amigos */
 .amigos {
     justify-content: space-between;
-    /* background-color: aqua; */
-    border: solid 1px gray;
-    /* margin: 1px; */
+    border: solid 2px #E5E4E2;
     padding: 5px;
-    display: flex;
- 
+    display: flex; 
   }
 
   .amigos > section:nth-child(1) {
     width: 30%;
     justify-content: center;
     align-items: center;
-    display: flex;
-    
+    display: flex;    
   }
 
   .amigos > section:nth-child(1) > img {
     max-width: 60%;
+    border-radius: 50%;
     height: auto;    
   }
 
@@ -50,9 +50,6 @@ aside {
     align-items: center;
     padding-top: 15px;
     height: 50px;
-    /* display: flex; */
-    
-    
   }
 
   .amigos > section:nth-child(2) > h2 {
@@ -66,6 +63,7 @@ aside {
     font-family: sans-serif;
     
   }
+  /* Fin amigos */
 
 #info_maria {
  /*  max-width: 50%; */
@@ -74,7 +72,7 @@ aside {
 }
 
 #info_maria > section:nth-child(1) img {
-  max-width: 25%;
+  max-width: 60%;
   border-radius: 50%;
   padding: 15px;
   align-self: center;
@@ -97,11 +95,11 @@ aside {
 }
 
 
-.amigos img {
+/* .amigos img {
 
   max-width: 25%;
   border-radius: 50%;
-}
+} */
 
 /* flex item of aside */
 .estado_del_usuario {
@@ -119,53 +117,58 @@ aside {
 }
 
 
-.nuevo_chat {
-  padding: 20px;
+
+/*_______________________ Inicio nuevo chat ______________________*/
+#nuevo_chat {
+  height: 130px; 
   display: flex;
   align-items: center;
   justify-content: center;
+  border: solid 2px #E5E4E2;
 }
 
-.nuevo_chat section {
-  padding: 15px 60px;
+#nuevo_chat section {
+  padding: 20px 50px;
   background-color: #A491D2;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.nuevo_chat section a{
+#nuevo_chat section a{
 color: white;
 text-decoration: none;
 }
+/*_____________ Fin nuevo chat_______________________________ */
 
 
-/* flex item of main */
-#contenedor_chat {
+/*>>>>>>>>>>>>>>> inicio comienza el networking >>>>>>>>>>>>*/
+#comienza_el_networking {
   display: flex;
   flex-direction: column;
   background-color: #e5e4e2;
-  flex: 0 0 80%;
+  flex: 0 0 85%;
   align-items: center;
   justify-content: center;
 }
 
-#contenedor_chat > section:nth-child(1) > img {
+#comienza_el_networking > section:nth-child(1) > img {
   width: 300px;
 }
 
-#contenedor_chat > section:nth-child(2) {
+#comienza_el_networking > section:nth-child(2) {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-#contenedor_chat > section:nth-child(2) > h1 {
+#comienza_el_networking > section:nth-child(2) > h1 {
   font-size: 45px;
   padding-bottom: 10px;
 }
 
-#contenedor_chat > section:nth-child(2) > p {
+#comienza_el_networking > section:nth-child(2) > p {
   line-height: 1.6;
 }
+/*>>>>>>>>>>>>>>>>>>> Fin comienza el networking >>>>>>>>>>>>>>>> */
 
 .negrita {
   font-weight: bold;

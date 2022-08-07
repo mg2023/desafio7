@@ -126,12 +126,26 @@ aside {
   padding: 20px 50px;
   background-color: #a491d2;
   font-size: 16px;
+  
 }
 
 #nuevo_chat section a {
   color: white;
   text-decoration: none;
 }
+
+#nuevo_chat section:hover {
+  background-color: #cec8ef;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+#nuevo_chat section > input:focus {
+  background-color: #808080;
+  text-decoration: none;
+}
+
+
 /*_____________ Fin nuevo chat_______________________________ */
 
 /*>>>>>>>>>>>>>>> inicio comienza el networking >>>>>>>>>>>>*/

@@ -150,6 +150,7 @@ aside {
   flex: 0 0 85%;
   align-items: center;
   justify-content: center;
+  border: solid 1px #808080;
 }
 
 #comienza_el_networking > section:nth-child(1) > img {
